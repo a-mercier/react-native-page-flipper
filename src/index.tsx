@@ -11,6 +11,7 @@ import {
 import type { Page, Size } from './types';
 import { createPages } from './utils/utils';
 import { BookPageBackground } from './BookPageBackground';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export type IPageFlipperProps = {
     data: string[];
@@ -442,27 +443,27 @@ const PageFlipper = React.forwardRef<PageFlipperInstance, IPageFlipperProps>(
             data.length % 2 !== 0;
 
         const bookPageProps: Omit<IBookPageProps, 'right' | 'front' | 'back'> =
-            {
-                containerSize: containerSize,
-                isAnimating: isAnimating,
-                enabled,
-                setIsAnimating: setIsAnimating,
-                isAnimatingRef: isAnimatingRef,
-                onPageFlip: onPageFlipped,
-                getPageStyle,
-                single: singleImageMode,
-                onFlipStart,
-                onPageDrag,
-                onPageDragEnd,
-                onPageDragStart,
-                isPressable: pressable,
-                renderPage,
-            };
+        {
+            containerSize: containerSize,
+            isAnimating: isAnimating,
+            enabled,
+            setIsAnimating: setIsAnimating,
+            isAnimatingRef: isAnimatingRef,
+            onPageFlip: onPageFlipped,
+            getPageStyle,
+            single: singleImageMode,
+            onFlipStart,
+            onPageDrag,
+            onPageDragEnd,
+            onPageDragStart,
+            isPressable: pressable,
+            renderPage,
+        };
 
         const ContentWrapper = renderContainer ? renderContainer : Wrapper;
 
         return (
-            <View style={styles.container} onLayout={onLayout}>
+            <GestureHandlerRootView style={styles.container} onLayout={onLayout}>
                 <View
                     style={[
                         styles.contentContainer,
@@ -551,7 +552,7 @@ const PageFlipper = React.forwardRef<PageFlipperInstance, IPageFlipperProps>(
                         )}
                     </ContentWrapper>
                 </View>
-            </View>
+            </GestureHandlerRootView>
         );
     }
 );
