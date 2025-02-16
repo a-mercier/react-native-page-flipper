@@ -8,19 +8,18 @@ Check out the [demo](https://chris24elias.github.io/react-native-page-flipper/) 
 ## Installation
 
 ```sh
-yarn add react-native-page-flipper
+npm install a-mercier/react-native-page-flipper --save
 ```
 
-In order for this package to work properly, its built using expo-linear-gradient,react-native-gesture-handler,react-native-linear-gradient, and react-native-reanimated. So make sure you also have these installed,
+In order for this package to work properly, its built using react-native-gesture-handler,react-native-linear-gradient, and react-native-reanimated. So make sure you also have these installed,
 
 ```sh
-yarn add expo-linear-gradient react-native-gesture-handler react-native-linear-gradient react-native-reanimated
+npm install react-native-gesture-handler react-native-linear-gradient react-native-reanimated --save
 ```
 
 Notes:
-react-native-linear-gradient is used for the shadows on iOS and Android, expo-linear-gradient is used on Web.
+react-native-linear-gradient is used for the shadows on iOS and Android
 in order to avoid page flickering with images, use react-native-fast-image as your image componenet, and preload the image files
-
 
 ### Landscape
 
