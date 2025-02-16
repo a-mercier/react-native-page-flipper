@@ -1,5 +1,5 @@
 {
-    "name": "react-native-page-flipper-updated",
+    "name": "react-native-page-flipper",
     "version": "1.0.0",
     "description": "React Native Page Flipper",
     "main": "lib/commonjs/index",
@@ -28,7 +28,7 @@
         "page-flipper"
     ],
     "repository": "https://github.com/a-mercier/react-native-page-flipper",
-    "author": "Chris (https://github.com/a-mercier)",
+    "author": "a-mercier (https://github.com/a-mercier)",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/a-mercier/react-native-page-flipper/issues"
