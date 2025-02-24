@@ -2,7 +2,7 @@
 
 This version is an updated version of the original package (avoiding legacy dependencies).
 
-This package allows you use a cool page curl effect on your React Native apps, it works on Android, iOS, and Web.
+This package allows you use a cool page curl effect on your React Native apps, it works on Android and iOS but not on WEB !
 Check out the [demo](https://chris24elias.github.io/react-native-page-flipper/) here
 
 ## Installation
